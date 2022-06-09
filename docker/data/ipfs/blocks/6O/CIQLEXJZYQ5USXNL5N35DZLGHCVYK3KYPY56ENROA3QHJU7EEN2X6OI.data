@@ -1,0 +1,31 @@
+
+ÕÍdataSources:
+  - kind: ethereum/contract
+    mapping:
+      abis:
+        - file:
+            /: /ipfs/Qmec7x6XABDMuY5gkGJTyFBmRnnrt9t7ELXcFGwLqUPzyf
+          name: Balancer
+      apiVersion: 0.0.4
+      entities:
+        - LOG_BLABS
+        - LOG_NEW_POOL
+      eventHandlers:
+        - event: 'LOG_BLABS(indexed address,indexed address)'
+          handler: handleLOG_BLABS
+        - event: 'LOG_NEW_POOL(indexed address,indexed address)'
+          handler: handleLOG_NEW_POOL
+      file:
+        /: /ipfs/QmeR2tANbunArzHuCKQEvJRcB2f7dF8i9jSQFC5bPTtfuK
+      kind: ethereum/events
+      language: wasm/assemblyscript
+    name: Balancer
+    network: chapel
+    source:
+      abi: Balancer
+      address: '0xA4D27B69302bFD04FD93Ba56B5a0a8Df5848dAe1'
+schema:
+  file:
+    /: /ipfs/QmWZGfX3rhHrnvQPT5mtiNXVHRXkCiaWRahYqYsmcxFYpP
+specVersion: 0.0.2
+Í

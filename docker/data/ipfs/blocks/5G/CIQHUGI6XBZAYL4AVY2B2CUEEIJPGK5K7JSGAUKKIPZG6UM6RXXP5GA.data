@@ -1,0 +1,8 @@
+
+uotype ExampleEntity @entity {
+  id: ID!
+  count: BigInt!
+  caller: Bytes! # address
+  blabs: Bytes! # address
+}
+o
